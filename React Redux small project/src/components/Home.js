@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Home(props) {
+    console.warn("props".props)
     return (
         <div>
            
@@ -23,6 +24,12 @@ function Home(props) {
                         ()=>{props.addToCartHandler({pice:1000,name:'i phone 11'})}
                         }>
                         Add To Cart</button>
+                        <button 
+                        className="remove-cart-btn"
+                    onClick={
+                        ()=>{props.removeToCartHandler()}
+                        }>
+                        Remove To Cart</button>    
                 </div>
             </div>
         </div>
